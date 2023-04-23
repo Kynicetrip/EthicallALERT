@@ -1,0 +1,80 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Alert</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/StyleSheet1.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./Index.html">Ethical Alert</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Signatures", "Home")">Signatures</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Admin", "Home")">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-md-12">
+            <h2>Explain your cause</h2>
+        </div>
+        <div class="col-md-6">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="cause-name" class="control-label">Cause-name</label>
+                    <input type="text" class="form-control" id="cause-name" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <label for="cause-description" class="control-label">Cause-description</label>
+                    <textarea type="text" class="form-control" id="cause-description" rows="5" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg" id="create-cause" onclick="return alert();">Create-cause</button>
+                    <script>
+                        function alert() {
+                            alert("cause added successfully");
+                        }
+                        
+                    </script>
+                </div>
+            </form>
+        </div>
+        <div class="jumbotron">
+            <p class="lead">
+                It is important for individuals to publicly express their objection to unfair
+                employment practices, racism, disregard of environmental impact and other unethical
+                business and political practices. By speaking out, people can raise awareness of these
+                issues and hold those responsible accountable for their actions. This can lead to positive change,
+                such as improved working conditions, more equitable treatment of marginalized groups, and greater environmental responsibility.
+                It is important to remember that silence can imply consent, so speaking up is essential in promoting justice and accountability.
+                <a href="./Signatures.html">Multiple cause areas</a>
+            </p>
+        </div>
+    </div>
+    <script src="../scripts/Causes.js"></script>
+</body>
+</html>
+

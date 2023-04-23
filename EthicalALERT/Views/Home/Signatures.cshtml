@@ -1,0 +1,133 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Alert</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./Index.html">Ethical Alert</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Cause", "Home")">Causes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Admin", "Home")">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="text-center">High-impact causes we recommend supporting</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="card-title">Unfair employment practices</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Treating someone in your staff unfairly because of who they are is discrimination.
+                        It can lead to them feeling upset, shamed, and even scared.
+                        Unfair treatment happens up and down the chain of command.<br />
+                        prevent unfair treatment
+                        <ul>
+                            <li>
+                                You should let all staff know that you operate anti-bullying and anti-harassment policies.
+                                Put these policies in your staff handbook and make sure all staff get a copy when they start.
+                            </li>
+                            <li>
+                                Set out behaviours that you won't tolerate, and explain the procedures that you'll go through
+                                if you need to investigate a possible case of unfair treatment.
+                            </li>
+                        </ul>
+                    </p>
+                    <button type="submit" class="btn btn-primary float-right">Sign-Cause</button>
+                    <a href="https://twitter.com/share" class="btn btn-outline-info">
+                        <i class="fa fa-twitter">Twitter</i>
+                    </a>
+                    <a href="https://facebook.com/share" class="btn btn-outline-info">
+                        <i class="fab fa-facebook social">FB</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="card-title">Improving animal welfare</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        If you want to reduce the suffering in the world, regardless of who experiences it,
+                        animal advocacy might be the right cause for you. At any given time, around 31 billion land animals
+                        are being raised and slaughtered in factory farms, while countless animals suffer needlessly in the wild.<br />
+                        Here are the specific causes within the area of improving animal welfare that we recommend supporting:
+                        <ul>
+                            <li>Advocating for farmed animals</li>
+                            <li>Reducing consumption of animal products</li>
+                            <li>Helping wild animals</li>
+                        </ul>
+                    </p>
+                    <button type="submit" class="btn btn-primary float-right">Sign-Cause</button>
+                    <a href="https://twitter.com/share" class="btn btn-outline-info">
+                        <i class="fa fa-twitter">Twitter</i>
+                    </a>
+                    <a href="https://facebook.com/share" class="btn btn-outline-info">
+                        <i class="fab fa-facebook social">FB</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="card-title">Unethical business practices</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Ihis could include issues such as fraud, corruption, and exploitation of workers or consumers.
+                        Unethical business practices lead to the mistreatment of people and animals. They can cause grave harm and even death due to negligence, directly or indirectly.
+                        Sometimes, the cause might be an individual act, and at other times, the entire company culture is responsible.<br />
+                        Here are the most common unethical practices in businesses.
+                        <ul>
+                            <li> Misleading Consumers With False Claims</li>
+                            <li>Spamming Email List Subscribers</li>
+                            <li>Bending Terms In User Agreements</li>
+                            <li>Manipulating Financial Statements</li>
+                        </ul>
+                    </p>
+                    <button type="submit" class="btn btn-primary float-right">Sign-Cause</button>
+                    <a href="https://twitter.com/share" class="btn btn-outline-info">
+                        <i class="fa fa-twitter">Twitter</i>
+                    </a>
+                    <a href="https://facebook.com/share" class="btn btn-outline-info">
+                        <i class="fab fa-facebook social">FB</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
